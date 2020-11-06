@@ -31,7 +31,7 @@ class Book
 		return("Book: "+name+"\nAuthor: "+author+"\nPrice: Rs "+price+"\nNo.of pages: "+num_pages);
 	}
 }
-class lab4
+class lab3
 {
 	public static void main(String ss[])
 	{
