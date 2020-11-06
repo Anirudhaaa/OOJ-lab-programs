@@ -100,7 +100,7 @@ class Saving extends Account
 				System.out.println("Insufficient balance");
 				else
 				{balance= balance - s_with;
-				System.out.println("Money has been withdrawn and balance has been updated");}
+				System.out.println("Money is withdrawn and balance is updated");}
 	}
 				
 		
@@ -131,7 +131,7 @@ class Current extends Account
 				return;}
 				else
 				{balance= balance- c_with;
-				System.out.println("Amount has been withdrawn and balance has been updated");}
+				System.out.println("Amount is withdrawn and balance is updated");}
 				if(balance<min)
 				{
 					System.out.println("Balance is below the minimum threshold. Service penalty charge = 100/- .");
@@ -154,7 +154,7 @@ class lab5
 	{
 		int cch, chh;
 		Scanner sx = new Scanner(System.in);
-		System.out.println("--------Welcome----------");
+		System.out.println("Welcome");
 		System.out.println("Savings account or current account? 1- Savings; 2- Current");
 		int ch= sx.nextInt();
 		if(ch==1)
