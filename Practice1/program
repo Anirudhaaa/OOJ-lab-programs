@@ -1,0 +1,34 @@
+import java.util.*;
+import java.lang.*;
+
+
+class Book<a, b, c>{
+   a name;
+   b author;
+   c number;
+   Book(a a1,b b1,c c1 )
+   {
+      this.name = a1;
+      this.author=b1;
+      this.number=c1;
+   }
+   public void display() 
+   {
+      System.out.println("Name of the Book : "+this.name+"\n Author of the book :"+this.author+"\n Number of pages :"+this.number);
+     
+   }
+}
+
+class p1
+{
+	 public static void main(String args[])
+	 {
+	 	Book<String, String, Integer>ob1= new Book<String, String, Integer>("Tell Me Your Dreams","Sidney Sheldon",400);
+	 	ob1.display();
+	 	Book<String, String, Integer>ob2= new Book<String, String, Integer>("One Night At The Call Centre","Chetan Bhagat",300);
+	 	ob2.display();
+	 	Book<String, String, Integer>ob3= new Book<String, String, Integer>("The Silence Of the Lambs","Thomas Harry",350);
+	 	ob3.display();
+
+	 }
+}
