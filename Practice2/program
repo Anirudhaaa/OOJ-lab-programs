@@ -1,0 +1,35 @@
+import java.util.*;
+import java.lang.*;
+
+class thread_test implements Runnable {
+    String name;
+    Thread t;
+    int time;
+    thread_test(String Thread_name, int time) {
+    name = Thread_name;
+    this.time= time;
+    t = new Thread(this, name);
+    System.out.println("thread:"+ t);
+    t.start(); 
+    }
+    public void run() {
+    try {
+    for(int i = 5; i > 0; i--) {
+    System.out.println(name);
+    Thread.sleep(time);
+    }
+    } catch (InterruptedException e) {
+    System.out.println(name + "Interrupt");
+    }
+    System.out.println(name + " terminate");
+    }
+    }
+    class p2 {
+    public static void main(String args[]) {
+    thread_test t1= new thread_test("USN",1000);
+    thread_test t2= new thread_test("CSE",2000);
+    thread_test t3= new thread_test("BMSCE",3000);
+    thread_test t4= new thread_test("BANGALORE",4000);
+         
+    }
+    }
